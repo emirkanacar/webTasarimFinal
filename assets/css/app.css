@@ -226,7 +226,7 @@ h1 {
 }
 
 .justify-content-center {
-  justify-content: flex-center;
+  justify-content: center;
 }
 
 .justify-content-space-between {
@@ -434,4 +434,66 @@ h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 28px;
   font-weight: 700;
+}
+
+/* Section Car Brands */
+
+.appMain > .carBrands > .container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.appMain > .carBrands > .container > .carBrandsHeader {
+  width: 100%;
+  text-align: center;
+}
+
+.appMain > .carBrands > .container > .carBrandsHeader > h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.appMain > .carBrands > .container > .carBrandsHeader > p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem {
+  padding-right: 25px;
+}
+
+.appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem:nth-child(6) {
+  padding-right: 0;
+}
+
+.appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a {
+  background-color: #f1f5fd;
+  padding: 20px 35px;
+  border-radius: 5px;
+  border: 1px solid #d8dde6;
+  box-shadow: 0 0 40px 0 rgba(234, 238, 249, 0.5);
+  transition: 300ms;
+  text-decoration: none;
+}
+
+.appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a:hover {
+  box-shadow: 14px 14px 40px 28px rgba(234, 238, 249, 1);
+  transition: 300ms;
+}
+
+.appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a > img {
+  width: 100px;
+  height: 100px;
+}
+
+
+.appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a > span {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  color: #585858;
+  font-weight: 700;
+  font-size: 18px;
 }
