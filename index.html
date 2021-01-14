@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Araç Kirala</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <header class="appHeader">
+        <div class="container flex flex-direction-row justify-content-space-between">
+            <div class="appBrand flex justify-content-start align-item-center">
+                <a href="index.html">
+                    <i class="fas fa-car"></i> 
+                    Nona Car
+                </a>
+            </div>
+            <nav class="appMenu flex">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Ana Sayfa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hakkımızda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Markalar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            İletişim
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="appMain">
+        <section class="bookCarIntro">
+            <div class="container flex flex-direction-row">
+                <div class="bookCarDetails">
+                    <h1><strong>Arabınızı</strong> Şuan Ayırtın</h1>
+                    <h1>Rahatlık için</h1>
+                    <p>Sizin rahatlıkla arabınızı kullanmak için her türlü özeni gösteriyoruz. COVİD-19 kapsamında arabalarımız düzenli olarak dezenfekte edilmektedir.</p>
+                    <a class="btn btn-yellow" href="iletisim.html">İletişim</a>
+                </div>
+                <div class="bookCarForm">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Araba Ara</h1>
+                        </div>
+                        <div class="card-body">
+                            <form method="post" action="#">
+                                <div class="form-group">
+                                    <select id="standard-select">
+                                        <option value="" selected disabled hidden>Marka</option>
+                                        <option value="tesla">Tesla</option>
+                                        <option value="bmw">BMW</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="hundai">Hundai</option>
+                                      </select>
+                                </div>
+                                <div class="form-group flex flex-direction-row withBox">
+                                    <div class="before-box">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <input type="text" name="pickupLocation" placeholder="Alınış Noktası" required>
+                                </div>
+                                <div class="form-group flex flex-direction-row withBox">
+                                    <div class="before-box">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <input type="text" name="dropLocation" placeholder="Bırakma Noktası" required>
+                                </div>
+                                <div class="form-group flex flex-direction-row withBox">
+                                    <div class="before-box">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <input type="date" name="date" placeholder="Tarih" required>
+                                </div>
+                                <div class="form-group flex flex-direction-row">
+                                    <button class="btn btn-default" type="submit">
+                                        Gönder
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
