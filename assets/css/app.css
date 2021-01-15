@@ -336,7 +336,8 @@ h1 {
   outline: 0;
 }
 
-.form-group.withBox > input {
+.form-group.withBox > input,
+.form-group > input{
   border: none;
 }
 
@@ -358,7 +359,8 @@ h1 {
   padding-top: 5px;
 }
 
-.form-group.withBox > input {
+.form-group.withBox > input,
+.form-group > input{
   padding: 10px;
   font-size: 16px;
   font-family: 'Nunito', sans-serif;
@@ -789,4 +791,197 @@ h1 {
 .appMain > .carSellingSuggestion > .container > .buySuggestion > button {
   padding-top: 10px;
   width: 32%;
+}
+
+/* Footer */
+
+.appFooter > .footerBody {
+  background-color: #00509D;
+}
+
+.appFooter > .footerBody > .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.appFooter > .footerBody > .container > .shortcutLinks {
+  grid-column: span 2;
+}
+
+.appFooter > .footerBody > .container > .shortcutLinks > h1 {
+  font-family: 'Nunito', sans-serif;
+  color: #FFF;
+  padding-bottom: 5px;
+}
+
+.appFooter > .footerBody > .container > .shortcutLinks > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.appFooter > .footerBody > .container > .shortcutLinks > ul > li {
+  padding: 5px;
+  padding-left: 0;
+}
+
+.appFooter > .footerBody > .container > .shortcutLinks > ul > li > a {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  color: #dcdcdc;
+  transition: 200ms;
+  font-size: 17px;
+}
+
+.appFooter > .footerBody > .container > .contactLinks > ul > li > a:hover {
+  color: #FDC500;
+  transition: 200ms;
+}
+
+.appFooter > .footerBody > .container > .contactLinks {
+  grid-column: span 3;
+}
+
+.appFooter > .footerBody > .container > .contactLinks > h1 {
+  font-family: 'Nunito', sans-serif;
+  color: #FFF;
+  padding-bottom: 5px;
+}
+
+.appFooter > .footerBody > .container > .contactLinks > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.appFooter > .footerBody > .container > .contactLinks > ul > li {
+  padding: 5px;
+  padding-left: 0;
+}
+
+.appFooter > .footerBody > .container > .contactLinks > ul > li > a {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  color: #dcdcdc;
+  transition: 200ms;
+  font-size: 17px;
+}
+
+.appFooter > .footerBody > .container > .contactLinks > ul > li > a:hover {
+  color: #FDC500;
+  transition: 200ms;
+}
+
+.appFooter > .footerBody > .container > .contactLinks > ul > li > a > i {
+  color: #FDC500;
+  padding-right: 10px;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods > ul > li > a:hover {
+  color: #FDC500;
+  transition: 200ms;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods {
+  grid-column: span 3;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods > h1 {
+  font-family: 'Nunito', sans-serif;
+  color: #FFF;
+  padding-bottom: 5px;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods > ul > li {
+  padding: 10px;
+  float: left;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods > ul > li:nth-child(1) {
+  padding-left: 0;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods > ul > li > a {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  color: #dcdcdc;
+  transition: 200ms;
+  font-size: 17px;
+}
+
+.appFooter > .footerBody > .container > .paymentMethods > ul > li > a:hover {
+  color: #FDC500;
+  transition: 200ms;
+}
+
+
+.appFooter > .footerBody > .container > .socialContact > ul > li > a:hover {
+  color: #FDC500;
+  transition: 200ms;
+}
+
+.appFooter > .footerBody > .container > .socialContact {
+  grid-column: span 4;
+}
+
+.appFooter > .footerBody > .container > .socialContact > h1 {
+  font-family: 'Nunito', sans-serif;
+  color: #FFF;
+  padding-bottom: 5px;
+}
+
+.appFooter > .footerBody > .container > .socialContact > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.appFooter > .footerBody > .container > .socialContact > ul > li {
+  padding: 10px;
+  float: left;
+}
+
+.appFooter > .footerBody > .container > .socialContact > ul > li:nth-child(1) {
+  padding-left: 0;
+}
+
+.appFooter > .footerBody > .container > .socialContact > ul > li > a {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  color: #dcdcdc;
+  transition: 200ms;
+  font-size: 17px;
+}
+
+.appFooter > .footerBody > .container > .socialContact > ul > li > a:hover {
+  color: #FDC500;
+  transition: 200ms;
+}
+
+.appFooter > .footerBody > .container > .socialContact > form > .form-group > input {
+  border-radius: 5px;
+  width: 90%;
+}
+
+.appFooter > .footerBody > .container > .socialContact > form > .form-group > button {
+  width: 30%;
+}
+
+.appFooter > .footerCopyright {
+  background-color: #003F88;
+}
+
+.appFooter > .footerCopyright > .container > h1 {
+  color: #FFF;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  padding: 15px 0;
 }
