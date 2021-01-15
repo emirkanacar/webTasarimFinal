@@ -746,3 +746,47 @@ h1 {
   color: #343a40;
   font-family: 'Nunito', sans-serif;
 }
+
+/* Car Selling Suggestion Section */
+.appMain > .carSellingSuggestion {
+  background-color: #f1f5fd;
+}
+
+.appMain > .carSellingSuggestion > .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.appMain > .carSellingSuggestion > .container > .sellSuggestion {
+  border: 1px solid #d8dde6;
+  padding: 30px;
+  grid-column: span 6;
+  margin-right: 10px;
+}
+
+.appMain > .carSellingSuggestion > .container > .sellSuggestion > h1,p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.appMain > .carSellingSuggestion > .container > .sellSuggestion > button {
+  padding-top: 10px;
+  width: 25%;
+}
+
+.appMain > .carSellingSuggestion > .container > .buySuggestion {
+  border: 1px solid #d8dde6;
+  padding: 30px;
+  grid-column: span 6;
+  margin-left: 10px;
+}
+
+.appMain > .carSellingSuggestion > .container > .buySuggestion > h1,p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.appMain > .carSellingSuggestion > .container > .buySuggestion > button {
+  padding-top: 10px;
+  width: 32%;
+}
