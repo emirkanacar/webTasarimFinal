@@ -1,0 +1,443 @@
+<!doctype html>
+<html class="no-js" lang="tr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nona Car - Araçlar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+    <header class="appHeader">
+        <div class="container flex flex-direction-row justify-content-space-between">
+            <div class="appBrand flex justify-content-start align-item-center">
+                <a href="index.html">
+                    <i class="fas fa-car"></i> 
+                    Nona Car
+                </a>
+            </div>
+            <nav class="appMenu flex">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            Ana Sayfa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hakkimizda.html">
+                            Hakkımızda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="araclar.html">
+                            Araçlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iletisim.html">
+                            İletişim
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="appMain">
+        <section class="carDetailsPage">
+            <div class="container">
+                <div class="carImages">
+                    <div class="sliderContent">
+                        <div id="primary-slider" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="assets/img/featured/bmw.jpg">
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide" style="width: 400px;">
+                                        <div class="splide__slide__container">
+                                            <img src="assets/img/featured/tesla.jpg">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="secondary-slider" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="assets/img/featured/bmw.jpg">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/img/featured/tesla.jpg">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carDetailsPage-details">
+                    <h1>Tesla Model X</h1>
+                    <p class="detailsInfo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Şişli</span>
+                        <i class="far fa-calendar-alt"></i>
+                        <span>6 gün önce</span>
+                        <i class="far fa-eye"></i>
+                        <span>9632</span>
+                        <i class="fas fa-heart"></i>
+                        <span>2563</span>
+                    </p>
+                    <p class="detailsDesc">
+                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoraliz the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble thena bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.
+                    </p>
+                    <p class="detailsColors">
+                        <span>Renkler:      </span>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                        <i class="fas fa-circle"></i>
+                    </p>
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <select id="standard-select">
+                                <option value="" selected disabled hidden>Lokasyon Seçin</option>
+                                <option value="mecidiyekoy">Mecidiyeköy</option>
+                                <option value="sisli">Şişli</option>
+                                <option value="florya">Florya</option>
+                                <option value="beylikduzu">Beylikdüzü</option>
+                                <option value="tuzla">Tuzla</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default" type="submit">Rezerve Et</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="carPostDetails flex justify-content-space-between">
+                    <p>İlan Numarası: #256398</p>
+                    <p>10 Ocak 2021</p>
+                </div>
+                <div class="carPostInteractions">
+                    <div class="actionButtons">
+                        <a class="btn btn-white">
+                            Paylaş
+                        </a>
+                        <a class="btn btn-white">
+                            <i class="fas fa-print"></i>
+                            Yazdır
+                        </a>
+                        <a class="btn btn-white">
+                            <i class="far fa-envelope"></i>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carFullDetails">
+            <div class="container">
+                <div class="tabbedContent">
+                    <div class="tab flex flex-direction-row">
+                        <a class="tablinks active" onclick="openTab(event, 'GenelBakis')">Genel Bakış</a>
+                        <a class="tablinks" onclick="openTab(event, 'Ozellikler')">Özellikler</a>
+                        <a class="tablinks" onclick="openTab(event, 'Bilgi')">Araç Bilgileri</a>
+                      </div>
+                      
+                      <div id="GenelBakis" class="tabcontent carFullDetails-tabcontent" style="display: block;">
+                        <h3>Genel Bakış</h3>
+                        <p>
+                            Quaerat odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atcorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                        </p>
+                        <p>
+                            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoraliz the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble thena bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.
+                        </p>
+                        <h3>Özellikler</h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span>Benzin Tipi: </span>
+                                    Elektrikli
+                                </td>
+                                <td>
+                                    <span>Renkler: </span>
+                                    Siyah, Mavi
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Kapasite: </span>
+                                    5 Kişi
+                                </td>
+                                <td>
+                                    <span>Hava Yastığı: </span>
+                                    Var
+                                </td>
+                            </tr>
+                        </table>
+                      </div>
+                      
+                      <div id="Ozellikler" class="tabcontent carFullDetails-tabcontent">
+                        <div class="tables flex flex-direction-row">
+                            <table style="width: 50%; padding: 20px 0;">
+                                <tr>
+                                    <td>
+                                        <span>Servo Direksiyon: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Klima: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Yolcu Hava Yastığı: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Sis Farları - Ön: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                            </table>
+                            <table style="width: 50%; padding: 20px 0;">
+                                <tr>
+                                    <td>
+                                        <span>Otomatik Fren Sistemi: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Sürücü Hava Yastığı: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Jant Kapakları: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Otomatik Klima: </span>
+                                        Mevcut
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>
+                      
+                      <div id="Bilgi" class="tabcontent carFullDetails-tabcontent">
+                        <div class="tables flex flex-direction-row">
+                            <table style="width: 50%; padding: 20px 0;">
+                                <tr>
+                                    <td>
+                                        <span>Motor Tipi: </span>
+                                        Elektrikli
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Motor Gücü: </span>
+                                        423 hp
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Tork: </span>
+                                        660 Nm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Hızlanma 0-100: </span>
+                                        5sn
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Azami Sürat: </span>
+                                        250km/saat
+                                    </td>
+                                </tr>
+                            </table>
+                            <table style="width: 50%; padding: 20px 0;">
+                                <tr>
+                                    <td>
+                                        <span>Menzil: </span>
+                                        565 km
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Şarj Süresi: </span>
+                                        9 Saat
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Hızlı Şarj Süresi: </span>
+                                        1 Saat
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Akü Çıkış Voltajı: </span>
+                                        350V
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Akü Tipi: </span>
+                                        Lithium-ion
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="appFooter">
+        <section class="footerBody">
+            <div class="container">
+                <div class="shortcutLinks">
+                    <h1>Hızlı Erişim</h1>
+                    <ul>
+                        <li>
+                            <a href="#">Ana Sayfa</a>
+                        </li>
+                        <li>
+                            <a href="#">Arabalar</a>
+                        </li>
+                        <li>
+                            <a href="#">Markalar</a>
+                        </li>
+                        <li>
+                            <a href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contactLinks">
+                    <h1>İletişim</h1>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-map-marked-alt"></i>
+                                İstanbul, Mecidiyeköy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-envelope"></i>
+                                iletisim@nonacar.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"></i>
+                                (0212) 232 52 85
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-fax"></i>
+                                (0212) 232 52 86
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="paymentMethods">
+                    <h1>Ödeme Methodları</h1>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-cc-visa fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-cc-paypal fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-credit-card fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-cc-mastercard fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="socialContact">
+                    <h1>Haber Bülteni</h1>
+                    <form method="post" action="">
+                        <div class="form-group">
+                            <input type="email" name="haberEmail" placeholder="Email Adresi Girin" required>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-yellow" type="submit">
+                                Kaydol
+                            </button>
+                        </div>
+                    </form>
+
+                    <h1>Sosyal Medya</h1>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-youtube fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footerCopyright">
+            <div class="container">
+                <h1>© 2021 Nona Car.</h1>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
