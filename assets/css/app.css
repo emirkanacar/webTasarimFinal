@@ -367,6 +367,19 @@ h1 {
   font-family: 'Nunito', sans-serif;
 }
 
+.form-group.withButton > button {
+  width: 40%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-group.withButton > input {
+  border: 1px solid #d8dde6;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+} 
+
 .form-group > textarea {
   padding: 20px;
   font-family: 'Nunito', sans-serif;
@@ -409,6 +422,43 @@ h1 {
 
 .text-youtube-red {
   color: #FF0000;
+}
+
+.selectGroup > label:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.selectGroup > label:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.selectGroup > label {
+  border: 1px solid #d8dde6;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.selectGroup > label.active {
+  border-color: #00509D;
+  color: #00509D;
+  background: #f6f7fb;
+  transition: 200ms;
+}
+
+.selectGroup > label:hover {
+  border-color: #00509D;
+  color: #00509D;
+  background: #f6f7fb;
+  transition: 200ms;
+}
+
+.selectGroup > label > span {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
 }
 
 /* Header */
@@ -1088,6 +1138,225 @@ h1 {
   font-family: 'Nunito', sans-serif;
 }
 
+/* Cars Page */
 
+.appMain > .carsPage {
+  background-color: #f1f5fd;
+}
 
+.appMain > .carsPage > .container {
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
 
+.appMain > .carsPage > .container > .carList {
+  grid-column: span 9;
+}
+
+.appMain > .carsPage > .container > .carList > h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #fff !important;
+  border: 1px solid #d8dde6;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .sortingDesc {
+  grid-column: span 4;
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  padding-left: 25px;
+  font-weight: 600;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .sortingType {
+  list-style: none;
+  padding-top: 10px;
+  grid-column: span 2;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .sortingType > li {
+  float: left;
+  padding-right: 20px;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .sortingType > li > a {
+  font-size: 26px;
+  color: #000;
+  transition: 200ms;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .sortingType > li.active > a {
+  color: #00509D;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .sortingType > li > a:hover {
+  color: #00509D;
+  transition: 200ms;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories {
+  grid-column: span 6;
+  font-family: 'Nunito', sans-serif;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories > p {
+  font-family: 'Nunito', sans-serif;
+  padding: 10px;
+  padding-left: 25px;
+  font-weight: 600;
+}
+
+.appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories > .selectGroup {
+  padding-top: 26px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 20px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carImage {
+  grid-column: span 4;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carImage > img {
+  height: 200px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails {
+  grid-column: span 8;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsBody {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border: 1px solid #d8dde6;
+  background-color: #ffffff;
+  border-top-right-radius: 5px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsBody > a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsBody > .carItemInfo {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsBody > .carItemInfo > span {
+  font-family: 'Nunito', sans-serif;
+  color: #8492a6;
+  padding-right: 20px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsBody > .carItemInfo > i {
+  color: #00509D;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsBody > .carItemDesc {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  color: #000;
+  margin-top: 5px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsFooter {
+  background: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid #d8dde6;
+  border-right: 1px solid #d8dde6;
+  border-bottom-right-radius: 5px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsFooter > p {
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding-top: 12px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsFooter > .carBtn {
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsFooter > .carBtn > button {
+  padding: 10px;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar {
+  grid-column: span 3;
+  padding-top: 94px;
+  padding-left: 10px;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarSearch {
+  padding: 7px 10px;
+  background-color: #fff !important;
+  border: 1px solid #d8dde6;
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-bottom: 2px;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter {
+  margin-top: 20px;
+  background-color: #fff !important;
+  border: 1px solid #d8dde6;
+  border-radius: 5px;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter > .filterCategory > h1 {
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  padding: 8px 15px;
+  border-bottom: 1px solid #d8dde6;
+  border-top: 1px solid #d8dde6;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter > .filterCategory-Content > form {
+  padding: 12px;
+  padding-top: 20px;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter > .filterCategory-Content > form > .form-group > input {
+  width: unset;
+  border: 1px solid #d8dde6;
+  border-radius: 5px;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter > .filterCategory-Content > form > .form-group > label {
+  font-family: 'Nunito', sans-serif;
+  color: #162946 !important;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter > .applyForm {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter > .applyForm > button {
+  margin: 20px;
+  width: 87%;
+}
