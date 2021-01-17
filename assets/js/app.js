@@ -1,3 +1,6 @@
+/* Global Variables */
+let responsive = false;
+
 /* Car Details Slider */
 document.addEventListener( 'DOMContentLoaded', function () {
 	var secondarySlider = new Splide( '#secondary-slider', {
@@ -39,4 +42,19 @@ function openTab(evt, name) {
     }
     document.getElementById(name).style.display = "block";
     evt.currentTarget.className += " active";
-  }
+}
+
+/* Responsive Menu */
+
+function responsiveTrigger()
+{
+	var responsiveMenu = document.getElementById("responsiveMenu");
+
+	if(responsive === false) {
+		responsiveMenu.classList.remove("hidden");
+		responsive = true;
+	}else {
+		responsiveMenu.classList.add("hidden");
+		responsive = false;
+	}
+}

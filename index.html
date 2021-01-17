@@ -24,8 +24,42 @@
                     Nona Car
                 </a>
             </div>
-            <nav class="appMenu flex">
+            <nav class="appMenu flex flex-direction-column">
                 <ul>
+                    <li class="active">
+                        <a href="index.html">
+                            Ana Sayfa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hakkimizda.html">
+                            Hakkımızda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="araclar.html">
+                            Araçlar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="iletisim.html">
+                            İletişim
+                        </a>
+                    </li>
+                    <li class="responsive-stack">
+                       <a href="#" onclick="responsiveTrigger()">
+                            <i style="font-size: 20px;" class="fas fa-bars"></i>
+                       </a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header id="responsiveMenu" class="responsive-header hidden">
+        <div class="container">
+            <nav class="responsive-nav">
+                <ul class="responsive-menu">
                     <li class="active">
                         <a href="index.html">
                             Ana Sayfa
@@ -113,7 +147,7 @@
                     <h1>Anlaşmalı Olduğumuz Markalar</h1>
                     <p>Birçok popüler marka ile anlaşmamız vardır.</p>
                 </div>
-                <div class="carBrandsSlider flex flex-direction-row justify-content-center">
+                <div class="carBrandsSlider">
                     <div class="carBrandItem">
                         <a href="#" class="flex flex-direction-column">
                             <img src="assets/img/brands/tesla.png">

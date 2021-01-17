@@ -506,6 +506,17 @@ h1 {
   border: 1px solid #d8dde6;
 }
 
+.visible {
+  display: block;
+  visibility: visible;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+
+}
+
 /* Header */
 .appHeader {
   background-color: #003F88;
@@ -526,6 +537,10 @@ h1 {
 
 .appHeader > .container > .appMenu > ul {
   list-style: none;
+}
+
+.appHeader > .container > .appMenu > ul.responsive-menu > li {
+  float: unset;
 }
 
 .appHeader > .container > .appMenu > ul > li {
@@ -552,6 +567,49 @@ h1 {
   background-color: #00509D;
   transition: 200ms;
   border-radius: 5px;
+}
+
+.appHeader > .container > .appMenu > ul > li.responsive-stack {
+  display: none;
+  visibility: hidden;
+}
+
+.responsive-header {
+  background-color: #003F88;
+  border-top: 1px solid #445b71;
+  border-bottom: 1px solid #445b71;
+}
+
+.responsive-header > .container > .responsive-nav > ul {
+  margin: 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.responsive-header > .container > .responsive-nav > ul > li {
+  padding: 10px;
+}
+
+.responsive-header > .container > .responsive-nav > ul > li > a {
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  transition: 200ms;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .appHeader > .container > .appMenu > ul > li.responsive-stack {
+    display: block;
+    visibility: visible;
+  }
+
+  .appHeader > .container > .appMenu > ul > li {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /* Section bookCarIntro */
@@ -593,6 +651,40 @@ h1 {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 1250px) {
+  .appMain > .bookCarIntro > .container {
+    max-width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .appMain > .bookCarIntro > .container {
+    flex-direction: column!important;
+    justify-content: center;
+  }
+
+  .appMain > .bookCarIntro > .container > .bookCarDetails {
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .appMain > .bookCarIntro > .container > .bookCarDetails > h1,a {
+    text-align: center;
+  }
+
+  .appMain > .bookCarIntro > .container > .bookCarDetails > p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .appMain > .bookCarIntro > .container > .bookCarForm {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+}
+
 /* Section Car Brands */
 
 .appMain > .carBrands > .container {
@@ -619,12 +711,18 @@ h1 {
   color: #6d7e9c;
 }
 
+.appMain > .carBrands > .container > .carBrandsSlider {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr)
+}
+
 .appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem {
+  grid-column: span 1;
   padding-right: 25px;
 }
 
 .appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem:nth-child(6) {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a {
@@ -635,6 +733,7 @@ h1 {
   box-shadow: 0 0 40px 0 rgba(234, 238, 249, 0.5);
   transition: 300ms;
   text-decoration: none;
+  justify-content: center;
 }
 
 .appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a:hover {
@@ -645,16 +744,44 @@ h1 {
 .appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a > img {
   width: 100px;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem > a > span {
   font-family: 'Nunito', sans-serif;
-  text-align: center;
   padding-top: 10px;
   color: #585858;
   font-weight: 700;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .appMain > .carBrands > .container > .carBrandsSlider {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .appMain > .carBrands > .container > .carBrandsSlider > .carBrandItem {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .appMain > .carBrands > .container > .carBrandsSlider {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .appMain > .carBrands > .container > .carBrandsSlider {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* Section Car Types */
@@ -739,6 +866,18 @@ h1 {
   color: #FFF;
   font-size: 24px;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .appMain > .carTypes > .container > .carTypesBody > .carTypeItem {
+    grid-column: span 6;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .appMain > .carTypes > .container > .carTypesBody > .carTypeItem {
+    grid-column: span 12;
+  }
 }
 
 /* Featured Cars Section */
@@ -877,6 +1016,22 @@ h1 {
   font-family: 'Nunito', sans-serif;
 }
 
+@media only screen and (max-width: 900px) {
+  .appMain > .featuredCars > .container > .featuredCarsSlider > .carSliderItem {
+    grid-column: 6 span;
+  }
+
+  .appMain > .featuredCars > .container > .featuredCarsSlider > .carSliderItem > .sliderItem-Body > a {
+    text-align: start;
+  }
+}
+
+@media only screen and (max-width: 632px) {
+  .appMain > .featuredCars > .container > .featuredCarsSlider > .carSliderItem {
+    grid-column: 12 span;
+  }
+}
+
 /* Car Selling Suggestion Section */
 .appMain > .carSellingSuggestion {
   background-color: #f1f5fd;
@@ -921,6 +1076,18 @@ h1 {
 .appMain > .carSellingSuggestion > .container > .buySuggestion > button {
   padding-top: 10px;
   width: 32%;
+}
+
+@media only screen and (max-width: 850px) {
+  .appMain > .carSellingSuggestion > .container > .sellSuggestion {
+    grid-column: 12 span;
+    margin-left: 10px;
+    margin-bottom: 15px;
+  }
+  .appMain > .carSellingSuggestion > .container > .buySuggestion {
+    grid-column: 12 span;
+    margin-right: 10px;
+  }
 }
 
 /* Footer */
@@ -1116,6 +1283,25 @@ h1 {
   padding: 15px 0;
 }
 
+@media only screen and (max-width: 940px) {
+  .appFooter > .footerBody > .container {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 40px;
+  }
+
+  .appFooter > .footerBody > .container > div {
+    padding-bottom: 40px;
+  }
+
+  .appFooter > .footerBody > .container > div:last-child {
+    padding-bottom: 0;
+  }
+
+  .appFooter > .footerBody > .container > .socialContact > form > .form-group > input {
+    width: 40%;
+  }
+}
+
 /* Contact Page */
 
 .appMain > .contactPage > .container {
@@ -1181,6 +1367,32 @@ h1 {
 
 .appMain > .contactPage > .container > .contactForm > .card > .card-header > h1 {
   font-family: 'Nunito', sans-serif;
+}
+
+@media only screen and (max-width: 1220px) {
+  .appMain > .contactPage > .container > .contactHello {
+    grid-column: 6 span;
+    padding-left: 25px;
+  }
+
+  .appMain > .contactPage > .container > .contactForm {
+    grid-column: 6 span;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .appMain > .contactPage > .container > .contactHello {
+    padding-right: 25px;
+    padding-bottom: 50px;
+  }
+
+  .appMain > .contactPage > .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .appMain > .contactPage > .container > .contactForm {
+    margin: 0 25px;
+  }
 }
 
 /* Cars Page */
@@ -1274,8 +1486,8 @@ h1 {
 }
 
 .appMain > .carsPage > .container > .carList > .cars > .carItem > .carImage > img {
-  height: 200px;
-  width: 300px;
+  width: 100%;
+  height: 100%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -1404,6 +1616,62 @@ h1 {
 .appMain > .carsPage > .container > .carsPageSidebar > .sidebarFilter > .applyForm > button {
   margin: 20px;
   width: 87%;
+}
+
+@media only screen and (max-width: 1220px) {
+  .appMain > .carsPage > .container > .carList {
+    grid-column: 12 span;
+  }
+
+  .appMain > .carsPage > .container > .carsPageSidebar {
+    grid-column: 12 span;
+  }
+
+  .appMain > .carsPage > .container > .carsPageSidebar {
+    padding-top: 40px
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .appMain > .carsPage > .container > .carList > .carSorting > .sortingDesc {
+    grid-column: 8 span;
+  }
+
+  .appMain > .carsPage > .container > .carList > .carSorting > .sortingType {
+    grid-column: 4 span;
+  }
+
+  .appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories {
+    grid-column: 12 span;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .appMain > .carsPage > .container > .carList > .cars > .carItem > .carImage {
+    grid-column: 12 span;
+  }
+
+  .appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails {
+    grid-column: 12 span;
+  }
+
+  .appMain > .carsPage > .container > .carList > .cars > .carItem {
+    padding: 25px;
+  }
+
+  .appMain > .carsPage > .container > .carList > .cars > .carItem > .carImage > img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
+
+  .appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsBody {
+    border-top-right-radius: 0;
+  }
+
+  .appMain > .carsPage > .container > .carList > .carSorting {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
 }
 
 /* Car Details */
@@ -1569,6 +1837,39 @@ h1 {
   border: 1px solid #d8dde6;
   padding: 10px;
   margin-right: 0;
+}
+
+@media only screen and (max-width: 980px) {
+  .appMain > .carDetailsPage > .container {
+    padding: 15px;
+  }
+  .appMain > .carDetailsPage > .container > .carDetailsPage-details {
+    grid-column: 2 span;
+  }
+
+  .appMain > .carDetailsPage > .container > .carImages {
+    grid-column: 2 span;
+  }
+
+  .appMain > .carDetailsPage > .container > .carImages {
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  .appMain > .carDetailsPage > .container > .carDetailsPage-details {
+    border-top: none;
+    border-left: 1px solid #d8dde6;
+    border-radius: 0px 0px 0px 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carFullDetails-tabcontent > .tables {
+    flex-direction: column;
+  }
+
+  .carFullDetails-tabcontent > table, .carFullDetails-tabcontent > .tables > table {
+    width: 100%!important;
+  }
 }
 
 /* About Page */
