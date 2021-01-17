@@ -1639,10 +1639,12 @@ h1 {
 
   .appMain > .carsPage > .container > .carList > .carSorting > .sortingType {
     grid-column: 4 span;
+    padding-left: 0;
   }
 
   .appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories {
     grid-column: 12 span;
+    flex-direction: column;
   }
 }
 
@@ -1671,6 +1673,44 @@ h1 {
   .appMain > .carsPage > .container > .carList > .carSorting {
     margin-left: 25px;
     margin-right: 25px;
+  }
+
+  .appMain > .carsPage > .container > .carList > .cars > .carItem > .carDetails > .detailsFooter {
+    border-left: 1px solid #d8dde6;
+    border-bottom-left-radius: 5px;
+  }
+
+  .appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories > .selectGroup {
+    padding-top: 0;
+    padding-bottom: 26px;
+    padding-left: 23px;
+  }
+
+  .appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories > p {
+    margin: 0;
+    padding-bottom: 15px;
+    padding-top: 0;
+  }
+
+  .selectGroup > label {
+    padding: 10px 11px;
+  }
+
+  .appMain > .carsPage > .container > .carList > h1 {
+    padding-left: 25px;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 879px) {
+  .appMain > .carsPage > .container > .carList > .carSorting > .carSortingCategories {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1240px) {
+  .appMain > .carsPage > .container {
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
