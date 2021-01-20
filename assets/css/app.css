@@ -1778,6 +1778,22 @@ h1 {
   width: 90%;
 }
 
+.appMain > .carDetailsPage > .container > .carDetailsPage-details > p.detailsPrice {
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.appMain > .carDetailsPage > .container > .carDetailsPage-details > p.detailsPrice > span {
+  font-weight: 500;
+}
+
+.appMain > .carDetailsPage > .container > .carDetailsPage-details > p.detailsColors {
+  margin-bottom: 0;
+}
+
 .appMain > .carDetailsPage > .container > .carDetailsPage-details > p.detailsColors > span {
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
